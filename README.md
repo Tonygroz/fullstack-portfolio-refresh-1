@@ -20,7 +20,7 @@ hugo new site my-site && cd my-site
 
 # Clone the ReFresh theme into the themes folder
 git init
-git submodule add https://github.com/PippoRJ/hugo-refresh.git themes/hugo-refresh
+git submodule add https://github.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh.git
 
 # Remove the default config
 rm config.toml
