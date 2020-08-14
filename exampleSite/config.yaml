@@ -1,7 +1,7 @@
 baseURL: https://example.com
 languageCode: en-us
 title: Personal website and blog
-theme: hugo-refresh
+theme: fullstack-portfolio-refresh
 # theme: ../..
 
 #########################################
@@ -109,6 +109,8 @@ params:
     title: Julia The White
     # option to specify the subtitle in the homepage
     subtitle: Personal website and blog
+    bio: "Hi, I'm Julia White. This is where I can put a few sentences or a paragraph about myself to introduce you to me and my website"
+    bulletpoints: ["Bullet Point 1","Bullet Point 2"]
     # option to specify image in the homepage
     image: "/images/avataaars.png" # worker.svg 
     # option to specify the width of the image in the homepage
