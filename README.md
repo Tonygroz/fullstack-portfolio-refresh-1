@@ -25,7 +25,7 @@ git submodule add https://github.com/Full-Stack-Problem-Solvers/fullstack-portfo
 rm config.toml
 
 # Fetch the example config
-curl -O https://raw.githubusercontent.com/PippoRJ/hugo-refresh/master/exampleSite/config.yaml
+curl -O https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/config.yaml
 
 # Run the site locally
 hugo server -D
