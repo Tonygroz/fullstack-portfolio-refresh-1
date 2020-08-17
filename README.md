@@ -21,11 +21,17 @@ hugo new site my-site && cd my-site
 # Clone the ReFresh theme into the themes folder
 git init
 git submodule add https://github.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh.git themes/fullstack-portfolio-refresh
+
 # Remove the default config
 rm config.toml
 
 # Fetch the example config
 curl -O https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/config.yaml
+
+# Fetch the example about me
+mkdir ./content/about
+
+curl -O https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/content/about/index.md > ./content/about/index.md
 
 # Run the site locally
 hugo server -D
