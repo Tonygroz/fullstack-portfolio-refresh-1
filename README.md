@@ -28,10 +28,11 @@ rm config.toml
 # Fetch the example config
 curl -O https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/config.yaml
 
-# Fetch the example about me
+# Make About content directory
 mkdir ./content/about
+# Fetch the example about me
+curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/content/about/index.md > ./content/about/index.md
 
-curl -O https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/content/about/index.md > ./content/about/index.md
 
 # Run the site locally
 hugo server -D
