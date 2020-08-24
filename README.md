@@ -34,11 +34,22 @@ mkdir ./content/about
 curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/content/about/index.md > ./content/about/index.md
 
 
+#Lets create your first blog post, first make a folder for projects
+mkdir ./content/projects \
+
+mkdir ./content/projects/Website_Inspiration \
+
+curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/projects/Website_Inspiration/index.md > ./content/projects/Website_Inspiration/index.md \
+
+curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/projects/Website_Inspiration/inspiration.png > ./content/projects/Website_Inspiration/inspiration.png 
+
+
+#Copy over example project
+
 # Run the site locally
 hugo server -D
 
-# Open the site in your browser
-open http://localhost:1313
+# Open the site in your browser default http://localhost:1313
 ```
 
 To run the Example Site using Hugo ReFresh:
@@ -56,6 +67,8 @@ rm config.toml
 
 # Copy the Example site content and configuration in my-site
 cp -R themes/hugo-refresh/exampleSite/* ./
+
+
 
 # Open the site in your browser
 hugo server -D
