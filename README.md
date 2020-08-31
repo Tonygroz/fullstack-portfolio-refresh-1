@@ -32,10 +32,8 @@ curl -O https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-p
 mkdir ./static/ \
 mkdir ./static/images \
 
-
+#Getting starting logo image
 curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-/assets/images/avataaars.png > ./static/images/logo.png 
-
-fullstack-portfolio-refresh/assets/images/
 
 # Make the About content directory
 mkdir ./content/about
