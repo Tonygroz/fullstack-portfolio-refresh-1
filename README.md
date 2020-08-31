@@ -29,11 +29,10 @@ rm config.toml
 curl -O https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/config.yaml
 
 #make directory for you picture
-mkdir ./static/ \
-mkdir ./static/images \
+mkdir ./static/images
 
 #Getting starting logo image
-curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-/assets/images/avataaars.png > ./static/images/logo.png 
+curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/assets/images/avataaars.png > ./static/images/logo.png 
 
 # Make the About content directory
 mkdir ./content/about
