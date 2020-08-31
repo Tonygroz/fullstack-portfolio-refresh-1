@@ -27,6 +27,10 @@ blackfriday:
 Taxonomies:
   tag: "tags"
 
+#this allows image assets to exists outside of theme
+assetDir: "static"
+
+
 # Supported fonts are:
 # https://fonts.google.com/
 
@@ -112,7 +116,7 @@ params:
     bio: "Hi, I'm Julia White. This is where I can put a few sentences or a paragraph about myself to introduce you to me and my website"
     bulletpoints: ["Bullet Point 1","Bullet Point 2"]
     # option to specify image in the homepage
-    image: "/images/avataaars.png" # worker.svg 
+    image: "/images/logo.png" 
     # option to specify the width of the image in the homepage
     imageWidth: 500px
 
