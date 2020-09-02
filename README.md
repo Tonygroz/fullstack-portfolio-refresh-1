@@ -25,60 +25,8 @@ git submodule add https://github.com/Full-Stack-Problem-Solvers/fullstack-portfo
 # Remove the default config
 rm config.toml
 
-# Fetch the example config
-curl -O https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/config.yaml
-
-#make directory for you picture
-mkdir ./static/images
-
-#Getting starting logo image
-curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/assets/images/avataaars.png > ./static/images/logo.png 
-
-# Make the About content directory
-mkdir ./content/about
-
-# Fetch the example About Me
-curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/content/about/index.md > ./content/about/index.md
-
-
-#Lets create your first blog post, first make a folder for projects
-mkdir ./content/projects \
-
-mkdir ./content/projects/Website_Inspiration \
-
-curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/projects/Website_Inspiration/index.md > ./content/projects/Website_Inspiration/index.md \
-
-curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/projects/Website_Inspiration/inspiration.png > ./content/projects/Website_Inspiration/inspiration.png 
-
-
-
-
-
-#Copy over example project
-
-# Run the site locally
-hugo server -D
-
-# Open the site in your browser default http://localhost:1313
-```
-
-To run the Example Site using Hugo ReFresh:
-
-```bash
-# Create site and cd into it
-hugo new site my-site && cd my-site
-
-# Clone the ReFresh theme into the themes folder
-git init
-git submodule add https://github.com/PippoRJ/hugo-refresh themes/hugo-refresh
-
-# Remove the default config
-rm config.toml
-
 # Copy the Example site content and configuration in my-site
-cp -R themes/hugo-refresh/exampleSite/* ./
-
-
+cp -R themes/fullstack-portfolio-refresh/templateSite/* ./
 
 # Open the site in your browser
 hugo server -D
