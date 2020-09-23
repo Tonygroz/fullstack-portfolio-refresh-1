@@ -1,0 +1,63 @@
+
+
+
+
+
+
+    <section class="section is-small">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h1 class="title section-title">Recent Projects and Posts</h1>
+              <h5 class="subtitle is-5 is-muted"></h5>
+              <div class="divider"></div>        
+               <div>&nbsp</div>
+               <div>&nbsp</div>
+                <div class="container">
+
+                {{- $pagesEachPage := 2 -}}
+                  <div class="columns">
+                    
+      {{- $pagesEachPage := 2 -}}
+                  <div class="columns">
+                    
+          {{ $pages := union (where $.Site.RegularPages "Section" "projects") (where $.Site.RegularPages "Section" "blog") }}
+          {{ $pages := first 4 $pages.ByWeight}}
+           
+                            
+              <div class="section is-small">
+                <div class="container">
+
+                {{- $pagesEachPage := 2 -}}
+                  <div class="columns is-flex">
+                    {{- range $index, $element := $pages -}}
+                        {{- if eq (mod $index $pagesEachPage) 0 -}}
+                          </div>
+                          <div class="columns">
+                        {{- end -}}
+                        
+                       {{- partial "single/frontpage_summary.html" . -}}
+                    {{- end -}}
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              
+
+
+
+              
+              </div>
+          
+          
+            </div>
+          </div>
+        </div>
+    </section>
+

@@ -1,22 +1,29 @@
 /* Style for the summary pages */
-.refresh-summary{
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
-  height: 4.5em;
-  text-overflow: ellipsis;
-}
 .refresh-summary-title{
   position: relative;
   margin: 10px 0 0 0;
   margin-bottom: 10px !important;
   padding: 0 0 5px 0;
   max-width: 100%;
-  overflow: hidden;
+  overflow: hidden
+  height: 10em;
   white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: normal !important;
 }
+
+
+
+.refresh-summary{
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  height: 9em;
+  text-overflow: ellipsis;
+
+}
+
 /* end */
 
 /* Styles for code snippets */

@@ -25,37 +25,8 @@ git submodule add https://github.com/Full-Stack-Problem-Solvers/fullstack-portfo
 # Remove the default config
 rm config.toml
 
-# Fetch the example config
-curl -O https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/config.yaml
-
-# Make About content directory
-mkdir ./content/about
-# Fetch the example about me
-curl https://raw.githubusercontent.com/Full-Stack-Problem-Solvers/fullstack-portfolio-refresh/master/exampleSite/content/about/index.md > ./content/about/index.md
-
-
-# Run the site locally
-hugo server -D
-
-# Open the site in your browser
-open http://localhost:1313
-```
-
-To run the Example Site using Hugo ReFresh:
-
-```bash
-# Create site and cd into it
-hugo new site my-site && cd my-site
-
-# Clone the ReFresh theme into the themes folder
-git init
-git submodule add https://github.com/PippoRJ/hugo-refresh themes/hugo-refresh
-
-# Remove the default config
-rm config.toml
-
 # Copy the Example site content and configuration in my-site
-cp -R themes/hugo-refresh/exampleSite/* ./
+cp -R themes/fullstack-portfolio-refresh/templateSite/* ./
 
 # Open the site in your browser
 hugo server -D
